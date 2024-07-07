@@ -1,6 +1,5 @@
 # Easy-Booking
-Easy Booking is an advanced hotel management and booking system that facilitates hotel reservations, availability checks, and hotel reviews.
 
-This project follows a microservice architecture, primarily comprising four key services: user service, hotel service, booking service, and rating service. Additionally, there is a service registry and API gateway that consolidate access to all services through a single port.
+Easy Booking is a sophisticated hotel management and booking system that allows users to book hotels, check availability, and review hotels. This project is designed with a microservice architecture, comprising four main services: user service, hotel service, booking service, and rating service. An API gateway facilitates unified access to these services through a single port. Additionally, a configuration server, utilizing GitHub for centralized configuration management, reduces redundancy and enhances scalability.
 
-A configuration server is also implemented, leveraging GitHub to centralize shared application configurations. This setup enhances scalability and reduces redundancy in the application properties files across the distributed server architecture.
+To ensure high reliability and resilience, we have implemented fault tolerance mechanisms across all services. These include circuit breakers to prevent resource exhaustion during failures, retry policies to handle transient errors automatically, and rate limiters to protect services from excessive load. This comprehensive fault tolerance strategy ensures robust and resilient operations within the microservice architecture.
